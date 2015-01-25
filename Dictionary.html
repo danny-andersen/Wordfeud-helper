@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="dict_styling.css" type="text/css"></link>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Wordfeud Assistant</title>
+<script src="dictwiki.js"></script>
+</head>
+<body>
+
+	<h2>Dictionary Lookup</h2>
+
+	<form>
+		<fieldset id="lookup">
+			<legend>Word Lookup</legend>
+			<input type="text" id="theWord" size="40"
+				placeholder="Word To look up"> <input type="button"
+				id="lookupButton" value="Lookup">
+			<div id="lookUpResult"></div>
+		</fieldset>
+	</form>
+
+	<h2>Word Finder</h2>
+
+	<form>
+		<fieldset id="permutations">
+			<legend>WordFeud Permutations</legend>
+			<ol>
+				<li><input type="button" id="addLetter" value="Add Tile" /> <input
+					type="button" id="deleteLetter" value="Remove Tile" /></li>
+				<li><label>Enter fixed letters:</label></li>
+				<li>
+					<p id="letterSlots">
+						<input type="text" class="tile" id="letter0" size="1"
+							maxlength="1"> <input type="text" class="tile"
+							id="letter1" size="1" maxlength="1">
+					</p>
+				</li>
+				<li><label>Enter letters to try:</label>
+					<p>
+						<input type="text" id="letters" size="7" maxlength="7"
+							placeholder="">
+					</p></li>
+				<li><input type="button" id="feud" value="Feud"></li>
+			</ol>
+			<div id="try"></div>
+			<div id="count"></div>
+			<p>Valid words:</p>
+			<div id="words"></div>
+		</fieldset>
+	</form>
+</body>
+</html>
